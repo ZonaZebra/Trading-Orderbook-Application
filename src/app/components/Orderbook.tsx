@@ -15,7 +15,7 @@ interface OrderbookProps {
   precision?: number
 }
 
-const OrderbookComponent = ({ symbol = 'BTC/USD', precision = 2 }: OrderbookProps) => {
+const Orderbook = ({ symbol = 'BTC/USD', precision = 2 }: OrderbookProps) => {
   // Sample data - in real app, this would come from your API
   const [asks, setAsks] = useState<Order[]>([
     { price: 44250.25, size: 1.2, total: 53100.3, timestamp: '2024-03-11T14:30:00Z' },
@@ -131,4 +131,4 @@ const OrderbookComponent = ({ symbol = 'BTC/USD', precision = 2 }: OrderbookProp
   )
 }
 
-export default OrderbookComponent
+export default Orderbook
